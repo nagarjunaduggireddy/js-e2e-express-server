@@ -5,6 +5,7 @@ stages {
         steps {
             git branch: 'main', url: "https://github.com/nagarjunaduggireddy/js-e2e-express-server.git"
         }
+        }
         stage('build') {
             steps {
                 npm 'install'
@@ -12,6 +13,5 @@ stages {
             }
         }
     }
-}
 }
 
