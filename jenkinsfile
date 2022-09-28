@@ -7,7 +7,7 @@ stages{
         }
         stage{
             steps('build') {
-                npm command: 'install', command: 'run build'
+                npm command: 'install', 'run build'
             }
         }
     }
