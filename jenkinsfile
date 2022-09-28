@@ -1,11 +1,11 @@
-pipeline{
+pipeline {
 agent any
-stages{
-    stage{
+stages {
+    stage {
         steps('gitclone') {
             git branch: 'main', url: "https://github.com/nagarjunaduggireddy/js-e2e-express-server.git"
         }
-        stage{
+        stage {
             steps('build') {
                 npm 'install'
                 npm 'run build'
